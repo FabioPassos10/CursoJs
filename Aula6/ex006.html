@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula-6</title>
+    <style>
+      body {
+        font-size: 20pt;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var name = window.prompt("Digite seu nome: ");
+      var n1 = Number(window.prompt("Digite sua primeira nota: "));
+      var n2 = Number(window.prompt("Digite sua segunda nota: "));
+      var n3 = Number(window.prompt("Digite sua terceira nota: "));
+      var media = (n1 + n2 + n3) / 3;
+      document.write("==========================================<br>");
+      document.write(
+        `Olá ${name}, Sua media é: ${media.toFixed(2).replace(".", ",")}<br>`
+        //.toFixed() numero de casas depois da virgula e o .replace() muda de (.)para (,)
+      );
+      document.write("==========================================<br>");
+      var salario = Number(window.prompt("Digite seu salário: "));
+      var aumento = Number(window.prompt("Digite o aumento"));
+
+      var raj = salario + aumento;
+      document.write(
+        `Seu novo salário é: ${raj.toLocaleString("pt-br", {
+          style: "currency",
+          currency: "BRL", //deixa o simbolo de R$ do brasil
+        })}`
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula-5</title>
+    <style>
+      body {
+        font-size: 20pt;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var nome = prompt("Digite seu nome: ");
+      document.write(
+        `Olá ,<strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`
+      ); //o (.length) verifica quantas letra tem a variavel
+      document.write(`Seu nome em maiusculo é: ${nome.toUpperCase()}<br>`);
+      //.toUpperCase() deixa as letra em maiusculo
+      document.write(`Seu nome em minusculo é: ${nome.toLowerCase()}`);
+      //.toLowerCase() deixa letra em minusculo
+    </script>
+  </body>
+</html>
