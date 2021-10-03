@@ -22,17 +22,11 @@
 
       var resp = n1 > n2 || n1 < n2;
 
-      if (n1 > n2) {
-        document.write(`${n1} é maior que ${n2}: ${resp} <br>`);
-      } else if (n1 < n2) {
-        document.write(`${n1} é menor que ${n2}: ${resp} <br>`);
-      } else if (n1 == n2) {
-        if (resp == false) {
-          document.write(`${n1} é igual a ${n2}: Simm <br>`);
-        } else {
-          document.write(`${n1} é igual a ${n2}: Nãoo <br>`);
-        }
-      }
+      var resp =
+        n1 > n2
+          ? `${n1} é maior que ${n2}  Simm`
+          : `${n1} é maior que ${n2}  Nãoo`;
+      document.write(`${resp}`);
     </script>
   </body>
 </html>
