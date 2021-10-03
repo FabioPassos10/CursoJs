@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula-8</title>
+  </head>
+  <body>
+    <script>
+      /*
+    > Maior
+    < Menor
+    == igual
+    != Diferente
+    >= Maior ou Igual
+    <= Menor ou Igual
+*/
+      var n1 = prompt("digite um numero: ");
+      var n2 = prompt("digite um numero: ");
+      var op = "Operação invalida";
+
+      var resp = n1 > n2 || n1 < n2;
+
+      if (n1 > n2) {
+        document.write(`${n1} é maior que ${n2}: ${resp} <br>`);
+      } else if (n1 < n2) {
+        document.write(`${n1} é menor que ${n2}: ${resp} <br>`);
+      } else if (n1 == n2) {
+        if (resp == false) {
+          document.write(`${n1} é igual a ${n2}: Simm <br>`);
+        } else {
+          document.write(`${n1} é igual a ${n2}: Nãoo <br>`);
+        }
+      }
+    </script>
+  </body>
+</html>
