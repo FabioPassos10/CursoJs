@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula-10</title>
+    <style>
+      body {
+        background-color: teal;
+        color: white;
+        font: normal 16pt Arial;
+      }
+    </style>
+  </head>
+ 
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="test">Clique em mim</div><br>
+    <div name="test2">Clique em mim</div><br>
+    <div id="test3">Clique em mim</div><br>
+
+    <script>
+      // =========usando Id===========
+    
+      var d = document.getElementById('test');
+      d.style.background='green'
+      d.innerText='mudei'
+
+      // ===========usando Name========
+      var a = document.getElementsByName('test2')[0];
+      a.innerText = 'Olá'
+
+      // usando queryselector
+      var f = document.querySelector('div#test3')
+      f.innerText='oi';
+      f.style.color='red'
+      
+
+    </script>
+  </body>
+</html>
