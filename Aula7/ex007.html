@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula-7</title>
+  </head>
+  <body>
+    <script>
+      /*
+    + Adição
+    - Subtração
+    / Divisão
+    * Multiplicação
+    % Resto 
+    ** Potencia 
+    */
+      //    Verifica se o numero é Impar ou Par
+      var Num = Number(prompt("Digite um Numero: "));
+      var P = "Par";
+      var I = "Impar";
+
+      if (Num % 2 === 0) {
+        document.write(
+          `O numero informado por você foi ${Num}, e ele é: ${P}<br>`
+        );
+      } else {
+        document.write(
+          `O numero informado por você foi <strong>${Num}</strong> , e ele é: ${I}<br>`
+        );
+      }
+      var name = prompt("Digite seu nome: ");
+      var n1 = Number(prompt("Digite sua nota: "));
+      var n2 = Number(prompt("Digite sua segunda nota: "));
+      var n3 = Number(prompt("Digite sua terceira nota: "));
+      var aprov = "Aprovado ";
+      var reprov = "Reprovado ";
+
+      var media = (n1 + n2 + n3) / 3;
+
+      if (media <= 5) {
+        document.write(
+          `Olá ${name}, você foi ${reprov} com nota ${media.toFixed(2)}<br>`
+        );
+      } else if (media > 5) {
+        document.write(
+          `Olá ${name}, você foi ${aprov} com nota ${media.toFixed(2)}<br>`
+        );
+      } else {
+        document.write(`Operação invalida`);
+      }
+    </script>
+  </body>
+</html>
