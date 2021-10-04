@@ -9,5 +9,5 @@ function verifica() {
   var ver = Math.max(txtn1, txtn2);
   var Test = ver % 2 == 0 ? "Par" : "Impar";
 
-  a.innerHTML = `O maior numero é: <strong>${ver}</strong> e ele é <strong>${Test}</strong> `;
+  a.innerHTML = `O maior número é: <strong>${ver}</strong> e ele é <strong>${Test}</strong>  `;
 }
