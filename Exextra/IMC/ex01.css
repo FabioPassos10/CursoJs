@@ -1,5 +1,11 @@
+footer {
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+}
 body {
-  background-color: rgb(5, 4, 4);
+  height: 100%;
+  width: 100%;
 }
 #divprinc {
   height: 500px;
@@ -7,7 +13,7 @@ body {
   margin: auto;
   background-color: rgb(231, 236, 236);
   box-shadow: 1em 1em rgba(186, 179, 179, 0.802);
-  border-radius: 12px;
+  border-radius: 0px 0px 12px 12px;
 }
 #header {
   width: 100%;
@@ -15,7 +21,6 @@ body {
   background-color: teal;
   color: white;
   text-align: center;
-  border-radius: 12px;
 }
 #conteudo {
   width: 70%;
@@ -24,7 +29,7 @@ body {
   margin-right: 15%;
 }
 #res {
-  background-color: gray;
+  background-color: rgb(175, 170, 170);
   width: 60%;
   margin-top: 5%;
   margin-left: 20%;
