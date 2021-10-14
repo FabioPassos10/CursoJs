@@ -9,7 +9,7 @@ function Reajust() {
   a.innerHTML = `Seu salário atual é: ${txt1.toLocaleString("pt-br", {
     style: "currency",
     currency: "BRL",
-  })}, e seu salário com aumento é ${salF.toLocaleString("pt-br", {
+  })}, e seu salário com aumento de 30% é ${salF.toLocaleString("pt-br", {
     style: "currency",
     currency: "BRL",
   })} `;
